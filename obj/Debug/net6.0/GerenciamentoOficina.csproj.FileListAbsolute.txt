@@ -24,3 +24,4 @@ C:\Users\ViniciusGomes\source\repos\GerenciamentoOficina\obj\Debug\net6.0\refint
 C:\Users\ViniciusGomes\source\repos\GerenciamentoOficina\obj\Debug\net6.0\GerenciamentoOficina.pdb
 C:\Users\ViniciusGomes\source\repos\GerenciamentoOficina\obj\Debug\net6.0\GerenciamentoOficina.genruntimeconfig.cache
 C:\Users\ViniciusGomes\source\repos\GerenciamentoOficina\obj\Debug\net6.0\ref\GerenciamentoOficina.dll
+C:\Users\ViniciusGomes\source\repos\GerenciamentoOficina\obj\Debug\net6.0\GerenciamentoOficina.MvcApplicationPartsAssemblyInfo.cs

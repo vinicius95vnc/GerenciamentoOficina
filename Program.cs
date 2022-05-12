@@ -1,4 +1,5 @@
-using GerenciadorOficina.Data;
+using Microsoft.EntityFrameworkCore;
+using GerenciamentoOficina.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<Context>
-    (options => options.UseSqlServer(builder.Configuration.GetConnectionString("ContextBanco"));
+    (options => options.UseSqlServer(builder.Configuration.GetConnectionString("ContextBanco")));
 
 var app = builder.Build();
 
