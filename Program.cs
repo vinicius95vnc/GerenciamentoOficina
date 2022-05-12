@@ -1,7 +1,16 @@
 using Microsoft.EntityFrameworkCore;
 using GerenciamentoOficina.Data;
+using Microsoft.AspNetCore.Identity;
+using GerenciamentoOficina.Areas.Identity.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("ContextBanco");
+
+builder.Services.AddDbContext<GerenciamentoOficinaContext>(options =>
+    options.UseSqlServer(connectionString));;
+
+builder.Services.AddDefaultIdentity<SecurityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<GerenciamentoOficinaContext>();;
 
 
 builder.Services.AddControllersWithViews();
@@ -22,6 +31,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication();;
 
 app.UseAuthorization();
 

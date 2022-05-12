@@ -6,6 +6,10 @@
     "mssql1": {
       "type": "mssql",
       "connectionId": "ConnectionStrings:ContextBanco"
+    },
+    "mssql2": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:GerenciamentoOficinaContextConnection"
     }
   }
 }
