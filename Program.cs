@@ -6,11 +6,11 @@ using GerenciamentoOficina.Areas.Identity.Data;
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("ContextBanco");
 
-builder.Services.AddDbContext<GerenciamentoOficinaContext>(options =>
+builder.Services.AddDbContext<SecurityContext>(options =>
     options.UseSqlServer(connectionString));;
 
 builder.Services.AddDefaultIdentity<SecurityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<GerenciamentoOficinaContext>();;
+    .AddEntityFrameworkStores<SecurityContext>();;
 
 
 builder.Services.AddControllersWithViews();

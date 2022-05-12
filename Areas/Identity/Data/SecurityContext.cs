@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GerenciamentoOficina.Data;
 
-public class GerenciamentoOficinaContext : IdentityDbContext<SecurityUser>
+public class SecurityContext : IdentityDbContext<SecurityUser>
 {
-    public GerenciamentoOficinaContext(DbContextOptions<GerenciamentoOficinaContext> options)
+    public SecurityContext(DbContextOptions<SecurityContext> options)
         : base(options)
     {
     }
